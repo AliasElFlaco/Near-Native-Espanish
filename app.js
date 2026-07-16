@@ -7,8 +7,9 @@ const path = require("path");
 app.use(express.static(path.join(__dirname, "public")));
 
 // Ruta principal (esto lo moveremos a /routes más adelante)
+// Replace the old app.get('/') with this:
 app.get("/", (req, res) => {
-  res.send("NearNativeSpanish está en desarrollo");
+  res.sendFile(path.join(__dirname, "views", "index.html"));
 });
 
 const PORT = process.env.PORT || 3000;
