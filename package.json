@@ -16,5 +16,9 @@
     "url": "https://github.com/AliasElFlaco/Near-Native-Espanish/issues"
   },
   "homepage": "https://github.com/AliasElFlaco/Near-Native-Espanish#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
+  }
 }
